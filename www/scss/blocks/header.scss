@@ -1,0 +1,169 @@
+header {
+    display: flex;
+
+}
+header .nav-left,
+header .nav-right {
+    height: 100vh;
+    width: 50%;
+        transition: transform 500ms;
+    -webkit-transition: transform 500ms;
+    -moz-transition: transform 500ms;
+    -ms-transition: transform 500ms;
+    -o-transition: transform 500ms;
+    position: relative;
+    z-index: 3;
+}
+header .nav-left {
+    background: red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+header .nav-right {
+    background: green;
+}
+nav, 
+.menu {
+    height: 100%;
+}
+.menu li {
+    height: 25%;
+    margin-left: 70px;
+    a {
+        display: flex;
+        align-items: center;
+        height: 100%;
+    }
+}
+article {
+    width: 100%;
+    min-height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    display: none;
+}
+article.active {
+    z-index: 2;
+    display: block;
+}
+header.active {
+    .nav-left {
+        transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
+        -moz-transform: translateX(-100%);
+        -ms-transform: translateX(-100%);
+        -o-transform: translateX(-100%);
+        transition: transform 500ms;
+        -webkit-transition: transform 500ms;
+        -moz-transition: transform 500ms;
+        -ms-transition: transform 500ms;
+        -o-transition: transform 500ms;
+}
+    .nav-right {
+        transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+        -moz-transform: translateX(100%);
+        -ms-transform: translateX(100%);
+        -o-transform: translateX(100%);
+        transition: transform 500ms;
+        -webkit-transition: transform 500ms;
+        -moz-transition: transform 500ms;
+        -ms-transition: transform 500ms;
+        -o-transition: transform 500ms;
+}
+}
+.close-article {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+    height: 20px;
+    width: 20px;
+    span {
+        height: 20px;
+        width: 2px;
+        position: absolute;
+        display: inline-block;
+        background: black;
+        left: 10px;
+        pointer-events: none;
+        &:nth-child(1) {
+            transform: rotate(-45deg);
+            -webkit-transform: rotate(-45deg);
+            -moz-transform: rotate(-45deg);
+            -ms-transform: rotate(-45deg);
+            -o-transform: rotate(-45deg);
+        }
+        &:nth-child(2) {
+            transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+            -moz-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            -o-transform: rotate(45deg);
+        }
+    }
+
+}
+.menu .icon {
+    background: grey;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 15px;
+    color: white;
+    font-size: 30px;
+}
+.menu li a .icon:before{
+    display: block;
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background: grey;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    z-index: -1;
+    transition: all 500ms;
+    -webkit-transition: all 500ms;
+    -moz-transition: all 500ms;
+    -ms-transition: all 500ms;
+    -o-transition: all 500ms;
+    opacity: 1;
+}
+.menu li a:hover .icon:before{
+    display: block;
+    content: '';
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    background: grey;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    z-index: -1;
+    transition: all 500ms;
+    -webkit-transition: all 500ms;
+    -moz-transition: all 500ms;
+    -ms-transition: all 500ms;
+    -o-transition: all 500ms;
+    opacity: 0;
+}
+.nav-item-text {
+    margin: 0 15px;
+}
