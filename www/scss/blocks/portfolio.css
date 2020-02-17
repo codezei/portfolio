@@ -1,0 +1,139 @@
+#portfolio {
+  display: none;
+}
+#portfolio .title {
+  width: 40%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  padding: 50px;
+  box-sizing: border-box;
+}
+#portfolio .title:after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(26, 27, 35, 0.9);
+}
+#portfolio .title img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  object-fit: cover;
+  z-index: -1;
+}
+#portfolio .title h1 {
+  position: relative;
+  z-index: 1;
+  border-bottom: 2px solid #e94c6f;
+  width: 70%;
+  text-transform: uppercase;
+  font-size: 65px;
+  color: white !important;
+}
+#portfolio .content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60%;
+  background: #f5f5f5;
+}
+#portfolio .content > div {
+  padding: 5px 0 50px 0;
+}
+#portfolio .content > div h2 {
+  text-align: center;
+  text-transform: uppercase;
+  padding: 10px 0 30px 0;
+  color: #343333;
+}
+#portfolio .content > div .filters {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#portfolio .content > div .filters input {
+  background: white;
+  border: 1px solid #e94c6f;
+  outline: none;
+  color: #e94c6f;
+  min-height: 40px;
+  min-width: 70px;
+  margin: 0 10px;
+  padding: 10px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all 500ms;
+  -webkit-transition: all 500ms;
+  -moz-transition: all 500ms;
+  -ms-transition: all 500ms;
+  -o-transition: all 500ms;
+}
+#portfolio .content > div .filters input.active {
+  background: #e94c6f;
+  color: white;
+  transition: all 500ms;
+  -webkit-transition: all 500ms;
+  -moz-transition: all 500ms;
+  -ms-transition: all 500ms;
+  -o-transition: all 500ms;
+}
+#portfolio .content > div ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+#portfolio .content > div ul li {
+  width: 300px;
+  height: 360px;
+  margin: 10px;
+}
+#portfolio .content > div ul li a {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: relative;
+}
+#portfolio .content > div ul li a img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+#portfolio .content > div ul li[data-category="layout"] a {
+  background: purple;
+}
+#portfolio .content > div ul li[data-category="wordpress"] a {
+  background: pink;
+}
+#portfolio .content > div ul .filter-item {
+  transition: all 1500ms;
+  -webkit-transition: all 1500ms;
+  -moz-transition: all 1500ms;
+  -ms-transition: all 1500ms;
+  -o-transition: all 1500ms;
+}
+#portfolio .content > div ul .filter-item.hide {
+  opacity: 0;
+  height: 0;
+  width: 0;
+  margin: 0;
+  transition: all 1500ms;
+  -webkit-transition: all 1500ms;
+  -moz-transition: all 1500ms;
+  -ms-transition: all 1500ms;
+  -o-transition: all 1500ms;
+}
+#portfolio.active {
+  display: flex;
+}

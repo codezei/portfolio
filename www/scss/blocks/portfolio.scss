@@ -1,0 +1,145 @@
+#portfolio {
+    display: none;
+    .title {
+        width: 40%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        padding: 50px;
+        box-sizing: border-box;
+        &:after {
+            content: "";
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba($color: #1a1b23, $alpha: 0.9);
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            object-fit: cover;
+            z-index: -1;
+        }
+        h1 {
+            position: relative;
+            z-index: 1;
+            border-bottom: 2px solid #E94C6F;
+            width: 70%;
+            text-transform: uppercase;
+            font-size: 65px;
+            color: white !important;
+        }
+    }
+    .content {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 60%;
+        background: #f5f5f5;
+        > div {
+            padding: 5px 0 50px 0;
+            
+            h2 {
+                text-align: center;
+                text-transform: uppercase;
+                padding: 10px 0 30px 0;
+                color: #343333;
+            }
+            .filters {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                input {
+                    background: white;
+                    border: 1px solid #E94C6F;
+                    outline: none;
+                    color: #E94C6F;
+                    min-height: 40px;
+                    min-width: 70px;
+                    margin: 0 10px;
+                    padding: 10px;
+                    cursor: pointer;
+                    text-transform: uppercase;
+                    transition: all 500ms;
+                    -webkit-transition: all 500ms;
+                    -moz-transition: all 500ms;
+                    -ms-transition: all 500ms;
+                    -o-transition: all 500ms;
+                    &.active {
+                        background: #E94C6F;
+                        color: white;
+                        transition: all 500ms;
+                        -webkit-transition: all 500ms;
+                        -moz-transition: all 500ms;
+                        -ms-transition: all 500ms;
+                        -o-transition: all 500ms;
+}
+                }
+            }
+            ul {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-wrap: wrap;
+                li {
+                    width: 300px;
+                    height: 360px;
+                    margin: 10px;
+                    a {
+                        width: 100%;
+                        height: 100%;
+                        display: block;
+                        position: relative;
+                        img {
+                            position: absolute;
+                            width: 100%;
+                            height: 100%;
+                            z-index: -1;
+                        }
+                    }
+                }
+                li[data-category="layout"] a{
+                    background: purple;
+                }
+                li[data-category="wordpress"] a{
+                    background: pink;
+                }
+                .filter-item {
+                    transition: all 1500ms;
+                    -webkit-transition: all 1500ms;
+                    -moz-transition: all 1500ms;
+                    -ms-transition: all 1500ms;
+                    -o-transition: all 1500ms;
+                }
+                .filter-item.hide {
+                    opacity: 0;
+                    height: 0;
+                    width: 0;
+                    margin: 0;
+                    transition: all 1500ms;
+                    -webkit-transition: all 1500ms;
+                    -moz-transition: all 1500ms;
+                    -ms-transition: all 1500ms;
+                    -o-transition: all 1500ms;
+}
+
+            }
+
+        }
+
+
+    }
+
+}
+#portfolio.active {
+    display: flex;
+}
