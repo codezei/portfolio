@@ -1,0 +1,17 @@
+.portfolio {
+    &__categories {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__category {
+        border: 1px solid $green;
+        cursor: pointer;
+        padding: 5px 15px;
+        color: $green;
+        background-color: #fff;
+        &:not(:last-child) {
+            margin-right: 15px;
+        }
+    }
+}

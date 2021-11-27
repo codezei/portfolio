@@ -1,0 +1,77 @@
+.home {
+    display: flex;
+    position: relative;
+    z-index: 2;
+    &--open &__col:nth-child(1) {
+        animation: 1s ease-in 0s 1 alternate forwards running homeOpenLeft;
+    }
+    &--open &__col:nth-child(2) {
+        animation: 1s ease-in 0s 1 alternate forwards running homeOpenRight;
+    }
+    &--close &__col:nth-child(1) {
+        animation: 1s ease-in 0s 1 reverse forwards running homeCloseLeft;
+    }
+    &--close &__col:nth-child(2) {
+        animation: 1s ease-in 0s 1 reverse forwards running homeCloseRight;
+    }
+
+
+}
+
+@keyframes homeOpenLeft {
+    from {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    40% {
+        opacity: 1;
+    }
+    to {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+}
+@keyframes homeOpenRight{
+    from {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    40% {
+        opacity: 1;
+    }
+    to {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}
+@keyframes homeCloseLeft {
+    from {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    40% {
+        opacity: 1;
+    }
+    to {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+}
+@keyframes homeCloseRight{
+    from {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    40% {
+        opacity: 1;
+    }
+    to {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}
+
+
+.color {
+    color: $green-word;
+}
