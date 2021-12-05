@@ -1,5 +1,10 @@
 .portfolio {
     background-color: #eee;
+
+    
+}
+.works {
+    padding: 25px;
     &__categories {
         display: flex;
         justify-content: center;
@@ -27,8 +32,6 @@
     &__list {
         display: flex;
         flex-wrap: wrap;
-        padding-left: 25px;
-        padding-right: 25px;
     }   
 
     &__item {
@@ -78,7 +81,19 @@
         font-weight: 700;
         pointer-events: none;
     }
-    
+    @media screen and (max-width: 767px) {
+        &__item {
+            width: calc(50% - 10px);
+        }
+    }
+    @media screen and (max-width: 575px) {
+        padding: 15px;
+    }
+    @media screen and (max-width: 479px) {
+        &__item {
+            width: 100%;
+        }
+    }
 }
 
 
@@ -118,7 +133,7 @@
         transform: translate(-50%, -50%);
         background-color: #fff;
         width: 500px;
-        max-width: 100%;
+        max-width: calc(100% - 20px);
         border: 5px solid $green;
 
         @media screen and (max-height: 700px) {

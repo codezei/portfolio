@@ -1,8 +1,10 @@
 .education {
     background-color: #eee;
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-bottom: 25px;
+    padding: 25px;
+
+    @media screen and (max-width: 575px) {
+        padding: 15px;
+    }
 }
 
 

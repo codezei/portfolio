@@ -6,18 +6,20 @@
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    background-image: url(../images/src/iam2.jpg);
+    // background-image: url(../images/src/iam2.jpg);
+    background-image: url(../images/src/portfolio.jpg);
     background-size: cover;
     background-position: top center;
     position: relative;
     z-index: 1;
+    overflow: hidden;
     &:before {
         content: "";
         display: block;
         position: absolute;
         width: 100%;
         height: 100%;
-        background-color: rgba(37,37,37, 0.7);
+        background-color: rgba(1,16,1, 0.96);
         top: 0;
         left: 0;
         bottom: 0;
@@ -33,5 +35,26 @@
         color: rgba($color:#fff, $alpha: 0.8);
         text-decoration: underline;
     }
+    &__social {
+        position: relative;
+        z-index: 2;
+    }
+    &__inner {
+        position: relative;
+        z-index: 3;
+    }
+
+    @media screen and (max-width: 991px) {
+        padding: 25px 0;
+        width: 100%;
+        height: 40vh;
+        justify-content: center;
+        
+    }
+    @media screen and (max-width: 575px) {
+        height: 30vh;
+        min-height: 210px;
+    }
+
 
 }

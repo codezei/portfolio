@@ -4,14 +4,33 @@
 <main>
 	<section class="home">
 		<div class="introduction home__col">
-			<h1 class="introduction__title">
-				HELLO <br> I`M <span class="color">EVGENIY</span> KACHUR
-			</h1>
-			<h2 class="introduction__subtitle">FRONTEND DEVELOPER</h2>
-			<div class="social">
-				<a href="" class="social__item"></a>
-				<a href="" class="social__item"></a>
-			</div>
+			<div id="large-header" class="large-header">
+				<canvas id="demo-canvas"></canvas>
+			  </div>			
+			  
+			  <div class="introduction__inner">
+				<h1 class="introduction__title">
+					HELLO <br> I`M <span class="color">EVGENIY</span> KACHUR
+				</h1>
+				<h2 class="introduction__subtitle">FRONTEND DEVELOPER</h2>
+				<div class="introduction__social social">
+					<a href="https://www.linkedin.com/in/kachur-b90161195/" class="social__item" target="_blank" >
+						<svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="linkedin-in" class="svg-inline--fa fa-linkedin-in fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path></svg>
+					</a>
+					<a href="mailto:e.develop@i.ua" class="social__item" target="_blank" >
+						<svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="envelope" class="svg-inline--fa fa-envelope fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M464 64H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm0 48v40.805c-22.422 18.259-58.168 46.651-134.587 106.49-16.841 13.247-50.201 45.072-73.413 44.701-23.208.375-56.579-31.459-73.413-44.701C106.18 199.465 70.425 171.067 48 152.805V112h416zM48 400V214.398c22.914 18.251 55.409 43.862 104.938 82.646 21.857 17.205 60.134 55.186 103.062 54.955 42.717.231 80.509-37.199 103.053-54.947 49.528-38.783 82.032-64.401 104.947-82.653V400H48z"></path></svg>
+					</a>
+					<a href="https://freelancehunt.com/freelancer/evgenij_k.html" target="_blank" class="social__item">
+						<svg xmlns="http://www.w3.org/2000/svg" fill="none">
+							<path d="M20 0C8.963 0 0 8.963 0 20s8.963 20 20 20 20-8.963 20-20S31.037 0 20 0zm0 35.111C11.63 35.111 4.815 28.37 4.815 20A15.21 15.21 0 0 1 20 4.815 15.21 15.21 0 0 1 35.185 20C35.111 28.37 28.37 35.111 20 35.111z" fill="#f2f5f9"/>
+							<g>
+							<path fill="currentColor" d="M17.556 22.889c1.407 1.259 3.481 1.259 4.815 0v-5.778c-1.407-1.259-3.482-1.259-4.815 0v5.778zm2.445-13.185c-2.741 0-5.333 1.111-7.259 3.037l3.407 3.407a5.41 5.41 0 0 1 7.704 0l3.407-3.407c-1.926-1.926-4.518-3.037-7.259-3.037z"/>
+							<path fill="currentColor" d="M23.852 23.852a5.41 5.41 0 0 1-7.704 0l-3.407 3.407c4 4 10.519 4 14.519 0l-3.407-3.407zM19.996 40c.148-2.37-1.259-4.519-3.556-5.259-5.926-1.482-10.37-6.296-11.333-12.296h10.074c-.815-1.556-.815-3.333 0-4.815H5.107c1.334-8.297 9.037-13.852 17.26-12.593a14.83 14.83 0 0 1 5.481 2c2.074 1.259 4.815.741 6.296-1.185-7.778-7.778-20.444-7.778-28.296 0s-7.852 20.444 0 28.296C9.626 37.852 14.663 40 19.996 40z"/>
+							</g>
+							</svg>
+					</a>
+				</div>
+			  </div>
 		</div>
 		<div class="menu home__col">
 			<a class="menu__item menu__item--profile" href="#" data-page="profile">
@@ -64,24 +83,8 @@
 	</section>
 <!--#include virtual="/parts/profile.html" -->
 <!--#include virtual="/parts/resume.html" -->
-	<!--#include virtual="/parts/portfolio.html" -->
-
-	<section class="contact page">
-		<div class="page__image">
-			<h2 class="page__title">
-				CO<span class="color">N</span>TACT
-			</h2>
-		</div>
-		<div class="page__content">
-
-		</div>
-		<button type="button" class="page__close">
-			<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
-				<path fill-rule="evenodd" d="M13.854 2.146a.5.5 0 0 1 0 .708l-11 11a.5.5 0 0 1-.708-.708l11-11a.5.5 0 0 1 .708 0Z"/>
-				<path fill-rule="evenodd" d="M2.146 2.146a.5.5 0 0 0 0 .708l11 11a.5.5 0 0 0 .708-.708l-11-11a.5.5 0 0 0-.708 0Z"/>
-			  </svg>
-		</button>
-	</section>
+<!--#include virtual="/parts/portfolio.html" -->
+<!--#include virtual="/parts/contact.html" -->
 </main>
 
 <!--#include virtual="/parts/footer.html" -->
